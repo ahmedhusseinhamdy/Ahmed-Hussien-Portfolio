@@ -250,13 +250,6 @@
     animation:blink 1.8s ease-in-out infinite;
   }
   @keyframes blink{0%,100%{opacity:1;}50%{opacity:.35;}}
-
-  .hero-name{
-    font-size:clamp(44px,6.6vw,80px);
-    line-height:1.02;
-    font-weight:800;
-    margin-bottom:20px;
-  }
   .shimmer-text{
     background:linear-gradient(100deg, var(--text) 0%, var(--cyan) 18%, var(--pink) 38%, var(--amber) 55%, var(--text) 72%);
     background-size:250% 100%;
@@ -699,7 +692,8 @@
     <div class="hero-grid">
       <div>
         <div class="availability-tag"><i></i> Completed military service — available for full-time roles</div>
-        <h1 class="hero-name">Ahmed Hussien<br><span class="shimmer-text">Hamdy</span></h1>
+        <h1 <br><span class="shimmer-text">Ahmed Hussien Hamdy</span></h1>
+        <br>
         <p class="hero-role">Technical Support professional supporting <b>AIB Bank's ERP system</b>, currently training in <b>manual, functional & regression testing</b> — with a front-end foundation in HTML, CSS, JavaScript and Angular.</p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-solid">View my work</a>
@@ -1058,7 +1052,7 @@ skillsAndTech.forEach(item => {
 });
 
 /* ================= MARQUEE ================= */
-const marqueeItems = ['HTML','CSS','JavaScript','TypeScript','Angular','SCSS','SQL','Postman','Firebase','PHP','MySQL','eSmartSoft','AIB Bank ERP'];
+const marqueeItems = ['HTML','CSS','JavaScript','TypeScript','Angular','SCSS','SQL','Postman','MySQL'];
 const track = document.getElementById('marqueeTrack');
 function buildMarquee(){
   track.innerHTML = '';
