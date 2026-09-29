@@ -184,3 +184,42 @@ function buildMarquee() {
   }
 }
 buildMarquee();
+
+
+/* ================= LET'S CONNECT FORM ================= */
+/* Opens the visitor's mail app with the message ready to send to you.
+   (GitHub Pages has no server, so this is the simplest way that needs no account.) */
+const connectForm = document.getElementById('connectForm');
+const connectStatus = document.getElementById('connectStatus');
+const MY_EMAIL = 'ahmedhussienhamdy@gmail.com';
+
+if (connectForm) {
+  connectForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = connectForm.email.value.trim();
+    const subject = connectForm.subject.value.trim();
+    const message = connectForm.message.value.trim();
+
+    [connectForm.email, connectForm.subject, connectForm.message].forEach(f => f.classList.remove('invalid'));
+    connectStatus.className = 'connect-status';
+
+    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!emailOk || !subject || !message) {
+      if (!emailOk) connectForm.email.classList.add('invalid');
+      if (!subject) connectForm.subject.classList.add('invalid');
+      if (!message) connectForm.message.classList.add('invalid');
+      connectStatus.textContent = 'Please fill in all fields with a valid email.';
+      connectStatus.classList.add('error');
+      return;
+    }
+
+    const body = message + '\n\n— From: ' + email;
+    window.location.href = 'mailto:' + MY_EMAIL +
+      '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(body);
+
+    connectStatus.textContent = 'Opening your email app… just press send.';
+    connectStatus.classList.add('ok');
+    connectForm.reset();
+  });
+}
