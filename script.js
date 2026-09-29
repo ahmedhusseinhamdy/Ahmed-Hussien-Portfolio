@@ -1,3 +1,27 @@
+/* ================= MOBILE NAV TOGGLE ================= */
+const navToggle = document.getElementById('navToggle');
+const navList = document.getElementById('navList');
+
+function setNav(open) {
+  navList.classList.toggle('open', open);
+  navToggle.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
+if (navToggle && navList && !navToggle.dataset.bound) {
+  navToggle.dataset.bound = '1';
+  navToggle.addEventListener('click', (e) => {
+    e.stopImmediatePropagation();   /* prevents any duplicate handler from toggling it back closed */
+    setNav(!navList.classList.contains('open'));
+  });
+  navList.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => setNav(false));
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) setNav(false);
+  });
+}
+
 /* ================= LOADER ================= */
 window.addEventListener('load', () => {
   setTimeout(() => {
@@ -16,7 +40,7 @@ window.addEventListener('mousemove', (e) => {
   cursorDot.style.top = mouseY + 'px';
 });
 
-function animateRing(){
+function animateRing() {
   ringX += (mouseX - ringX) * 0.16;
   ringY += (mouseY - ringY) * 0.16;
   cursorRing.style.left = ringX + 'px';
@@ -36,51 +60,60 @@ const ctx = canvas.getContext('2d');
 let W, H, particles;
 const COLORS = ['#4f46e5', '#ec4899', '#22d3ee', '#f5a623'];
 
-function resize(){
+function resize() {
   W = canvas.width = window.innerWidth;
   H = canvas.height = window.innerHeight;
 }
-window.addEventListener('resize', resize);
 resize();
 
-function initParticles(){
-  const count = Math.min(90, Math.floor((W*H)/16000));
-  particles = Array.from({length: count}, () => ({
-    x: Math.random()*W,
-    y: Math.random()*H,
-    vx: (Math.random()-0.5)*0.35,
-    vy: (Math.random()-0.5)*0.35,
-    r: Math.random()*1.8+1,
-    color: COLORS[Math.floor(Math.random()*COLORS.length)]
+function initParticles() {
+  const count = Math.min(90, Math.floor((W * H) / 16000));
+  particles = Array.from({ length: count }, () => ({
+    x: Math.random() * W,
+    y: Math.random() * H,
+    vx: (Math.random() - 0.5) * 0.35,
+    vy: (Math.random() - 0.5) * 0.35,
+    r: Math.random() * 1.8 + 1,
+    color: COLORS[Math.floor(Math.random() * COLORS.length)]
   }));
 }
 initParticles();
-window.addEventListener('resize', initParticles);
 
-function drawParticles(){
-  ctx.clearRect(0,0,W,H);
-  for(let p of particles){
+/* iPhone/Android: the address bar changes only the height while scrolling,
+   so particles are rebuilt only when the width really changes */
+let lastW = window.innerWidth;
+window.addEventListener('resize', () => {
+  resize();
+  if (window.innerWidth !== lastW) {
+    lastW = window.innerWidth;
+    initParticles();
+  }
+});
+
+function drawParticles() {
+  ctx.clearRect(0, 0, W, H);
+  for (let p of particles) {
     p.x += p.vx; p.y += p.vy;
-    if(p.x < 0 || p.x > W) p.vx *= -1;
-    if(p.y < 0 || p.y > H) p.vy *= -1;
+    if (p.x < 0 || p.x > W) p.vx *= -1;
+    if (p.y < 0 || p.y > H) p.vy *= -1;
     ctx.beginPath();
-    ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
     ctx.fillStyle = p.color;
     ctx.globalAlpha = 0.85;
     ctx.fill();
   }
   ctx.globalAlpha = 1;
-  for(let i=0;i<particles.length;i++){
-    for(let j=i+1;j<particles.length;j++){
+  for (let i = 0; i < particles.length; i++) {
+    for (let j = i + 1; j < particles.length; j++) {
       const a = particles[i], b = particles[j];
-      const dx = a.x-b.x, dy = a.y-b.y;
-      const dist = Math.sqrt(dx*dx+dy*dy);
-      if(dist < 130){
+      const dx = a.x - b.x, dy = a.y - b.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 130) {
         ctx.beginPath();
-        ctx.moveTo(a.x,a.y);
-        ctx.lineTo(b.x,b.y);
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
         ctx.strokeStyle = a.color;
-        ctx.globalAlpha = (1 - dist/130) * 0.25;
+        ctx.globalAlpha = (1 - dist / 130) * 0.25;
         ctx.lineWidth = 1;
         ctx.stroke();
       }
@@ -94,18 +127,18 @@ drawParticles();
 /* ================= SCROLL REVEAL ================= */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if(entry.isIntersecting){
+    if (entry.isIntersecting) {
       entry.target.classList.add('in');
     }
   });
-}, {threshold:0.15});
+}, { threshold: 0.15 });
 
 document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
 
 /* ================= SKILL BARS ================= */
 const skillObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if(entry.isIntersecting){
+    if (entry.isIntersecting) {
       const fill = entry.target;
       const level = fill.getAttribute('data-level');
       fill.style.width = level + '%';
@@ -113,16 +146,16 @@ const skillObserver = new IntersectionObserver((entries) => {
       skillObserver.unobserve(fill);
     }
   });
-}, {threshold:0.4});
+}, { threshold: 0.4 });
 
 document.querySelectorAll('.skill-fill').forEach(el => skillObserver.observe(el));
 
 /* ================= CHIP CLOUD ================= */
 const skillsAndTech = [
-  'Manual Testing','Functional Testing','Regression Testing','Bug Reporting','Technical Support',
-  'SQL','Postman','HTML','CSS','JavaScript','TypeScript','Angular','SCSS','Flutter','Firebase',
-  'PHP','MySQL','UI/UX Design','Visual Studio Code','Microsoft Office',
-  'Communication','Time Management','Presentation Skills'
+  'Manual Testing', 'Functional Testing', 'Regression Testing', 'Bug Reporting', 'Technical Support',
+  'SQL', 'Postman', 'HTML', 'CSS', 'JavaScript', 'TypeScript', 'Angular', 'SCSS',
+  'PHP', 'MySQL', 'Visual Studio Code', 'Microsoft Office',
+  'Communication', 'Time Management', 'Presentation Skills'
 ];
 const chipCloud = document.getElementById('chipCloud');
 skillsAndTech.forEach(item => {
@@ -133,11 +166,11 @@ skillsAndTech.forEach(item => {
 });
 
 /* ================= MARQUEE ================= */
-const marqueeItems = ['HTML','CSS','JavaScript','TypeScript','Angular','SCSS','SQL','Postman','PHP','MySQL'];
+const marqueeItems = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Angular', 'SCSS', 'SQL', 'Postman', 'MySQL'];
 const track = document.getElementById('marqueeTrack');
-function buildMarquee(){
+function buildMarquee() {
   track.innerHTML = '';
-  for(let r=0;r<2;r++){
+  for (let r = 0; r < 2; r++) {
     const span = document.createElement('span');
     marqueeItems.forEach((item, idx) => {
       const wrap = document.createElement('span');
