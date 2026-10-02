@@ -15,6 +15,12 @@
 
 <body>
 
+  <!-- Reusable icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  </svg>
+
   <div id="loader">
     <div class="loader-initials">AH</div>
     <div class="loader-bar"></div>
@@ -23,20 +29,14 @@
 
   <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-ring" id="cursorRing"></div>
-  <canvas id="particles"></canvas>
-  <div class="noise"></div>
 
   <header>
-    <div class="logo">Ahmed<span>.</span>Hussien</div>
+    <a class="logo" href="#hero">Ahmed<span>.</span>Hussien</a>
     <nav>
       <ul id="navList">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#connect">Let's Connect</a></li>
+        <li><a href="#connect">Contact</a></li>
       </ul>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navList">
@@ -49,85 +49,122 @@
     <!-- HERO -->
     <section id="hero">
       <div class="hero-grid">
-        <div>
-          <h1><span class="shimmer-text">Ahmed Hussien Hamdy</span></h1>
-          <p class="hero-role">Technical Support professional supporting <b>AIB Bank's ERP system</b>, currently
-            training in <b>manual, functional & regression testing</b> — with a front-end foundation in HTML, CSS,
-            JavaScript and Angular.</p>
+        <div class="hero-text">
+          <h1 class="hero-name"><span class="shimmer-text">Ahmed Hussien</span></h1>
+          <p class="hero-role">I test software, identify issues, and provide seamless technical support to deliver
+            exceptional user experiences.</p>
+
           <div class="hero-cta">
-            <a href="#projects" class="btn btn-solid">View my work</a>
-            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            <a class="hero-btn"
+              href="https://wa.me/201012355187?text=Hello%20Ahmed,%20I%20would%20like%20to%20get%20in%20touch%20with%20you."
+              target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              <span>Message Me</span>
+            </a>
+            <a class="hero-btn" href="https://drive.google.com/file/d/1faybcBvRj9n_9xGnfEb9UT0DDjshPLh_/view" target="_blank"
+              rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <div class="hero-social">
+            <a href="https://github.com/ahmedhusseinhamdy" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#i-github"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/ahmed-hussien-012b6a33b" target="_blank" rel="noopener"
+              aria-label="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            </a>
           </div>
         </div>
 
         <div class="hero-visual">
-          <div class="orb"></div>
-          <div class="ring-dashed"></div>
-          <div class="ring-dashed r2"></div>
-          <div class="float-card">
-            <div class="float-initials">AH</div>
-            <h4>Software Testing & Technical Support Trainee</h4>
-            <p>eSmartSoft · Cairo, Egypt</p>
-            <div class="float-stats">
-              <div><strong>3</strong><span>Projects Built</span></div>
-              <div><strong>10+</strong><span>Tech Skills</span></div>
-              <div><strong>2</strong><span>Languages</span></div>
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar">
+              <img src="images/Gemini_Generated_Image_1ppnm1ppnm1ppnm1.jpg" alt="Ahmed Hussien Hamdy">
             </div>
+            <span class="hero-avatar-badge">Technical Support • Software Testing • QA</span>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="marquee-wrap">
-      <div class="marquee-track" id="marqueeTrack"></div>
-    </div>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-heading about-heading reveal">About Me</h2>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <p class="eyebrow-label">What I work with</p>
-      <h2 class="section-heading reveal">Skills &amp; core competencies</h2>
-
-      <div class="skills-grid">
-        <div class="reveal-right">
-          <p style="color:var(--text-dim);font-size:14px;margin-bottom:18px;">Tools &amp; technologies</p>
-          <div class="chip-cloud" id="chipCloud"></div>
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-photo">
+            <img src="images/about-photo.jpg" alt="Ahmed Hussien Hamdy">
+          </div>
+          <!-- <span class="about-badge">Cairo, Egypt</span> -->
         </div>
-      </div>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <p class="eyebrow-label">Where I've worked</p>
-      <h2 class="section-heading reveal">Professional experience</h2>
+        <div class="about-body reveal-right">
+          <p class="about-lead">Technical Support &amp; Software Testing</p>
+          <p>I'm a Technical Support professional with a focus on troubleshooting, software testing, and delivering
+            reliable technical solutions. I have experience in manual testing, functional testing, regression
+            testing, defect reporting, and technical support.</p>
+          <p>My technical skills include HTML, CSS, JavaScript, Angular, SQL, and Postman, with hands-on experience
+            in web development projects. I'm also familiar with identifying and documenting software defects,
+            verifying fixes, and working with development teams to improve software quality.</p>
+          <p>I'm a fast learner with strong problem-solving and communication skills. I enjoy learning new
+            technologies, working in collaborative environments, and developing my skills in Technical Support and
+            Software Testing.</p>
 
-      <div class="timeline">
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <div class="tl-head">
-              <h3>Software Testing & Technical Support </h3>
-              <span class="tl-meta">May 2026 — Present · Cairo, Egypt</span>
+          <div class="about-tabs" role="tablist">
+            <button class="about-tab active" role="tab" aria-selected="true" data-tab="tab-testing">Testing</button>
+            <button class="about-tab" role="tab" aria-selected="false" data-tab="tab-frontend">Frontend</button>
+            <button class="about-tab" role="tab" aria-selected="false" data-tab="tab-tools">Tools</button>
+            <button class="about-tab" role="tab" aria-selected="false" data-tab="tab-experience">Experience</button>
+            <button class="about-tab" role="tab" aria-selected="false" data-tab="tab-education">Education</button>
+            <button class="about-tab" role="tab" aria-selected="false" data-tab="tab-courses">Courses</button>
+          </div>
+
+          <div class="about-panels">
+            <div class="about-panel active" id="tab-testing" role="tabpanel">
+              <span class="chip">Manual Testing</span><span class="chip">Functional Testing</span><span class="chip">Regression Testing</span><span class="chip">Bug Reporting</span><span class="chip">Technical Support</span>
             </div>
-<div class="tl-company">
-  <a href="https://www.linkedin.com/company/esmartsoft/" target="_blank" style="color: inherit; text-decoration: none;">eSmartSoft</a>
-</div>            <ul>
-              <li>Provide technical support for AIB Bank's Enterprise Resource Planning (ERP) system and assist users
-                with system-related issues.</li>
-              <li>Troubleshoot reported technical issues, investigate problems, and follow up with users until
-                resolution.</li>
-              <li>Communicate with users to understand reported issues and provide appropriate technical assistance.
-              </li>
-              <li>Receive practical training in manual, functional, and regression testing as part of the role.</li>
-              <li>Execute test cases, document software defects, and verify bug fixes during software testing
-                activities.</li>
-              <li>Collaborate with the development team to reproduce and investigate software issues and contribute to
-                improving software quality.</li>
-            </ul>
-            <div class="badge-row">
-              <span class="badge">ERP Support</span>
-              <span class="badge">Manual Testing</span>
-              <span class="badge">Defect Reporting</span>
-              <span class="badge">Regression Testing</span>
+
+            <div class="about-panel" id="tab-frontend" role="tabpanel">
+              <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">SCSS</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Angular</span>
+            </div>
+
+            <div class="about-panel" id="tab-tools" role="tabpanel">
+              <span class="chip">SQL</span><span class="chip">MySQL</span><span class="chip">Postman</span><span class="chip">PHP</span><span class="chip">Visual Studio Code</span><span class="chip">Microsoft Office</span>
+            </div>
+
+            <div class="about-panel" id="tab-experience" role="tabpanel">
+              <div class="about-edu">
+                <h4>Software Testing &amp; Technical Support</h4>
+                <span>eSmartSoft</span>
+                <em>May 2026 — Present · Cairo, Egypt</em>
+                <p>Technical support for AIB Bank's ERP system, troubleshooting user issues, and hands-on work in
+                  manual, functional and regression testing: executing test cases, documenting defects and
+                  verifying fixes.</p>
+              </div>
+            </div>
+
+            <div class="about-panel" id="tab-education" role="tabpanel">
+              <div class="about-edu">
+                <h4>Bachelor of Management Information Systems</h4>
+                <span>El Shorouk Academy</span>
+                <em>Sep 2019 — Jun 2023</em>
+              </div>
+            </div>
+
+            <div class="about-panel" id="tab-courses" role="tabpanel">
+              <div class="about-edu">
+                <h4>Front-End Development Diploma</h4>
+                <span>Route Academy (Online)</span>
+                <em>Dec 2024 — Jun 2025</em>
+              </div>
             </div>
           </div>
         </div>
@@ -136,146 +173,80 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-      <p class="eyebrow-label">Things I've built</p>
-      <h2 class="section-heading reveal">Selected projects</h2>
+      <div class="proj-head reveal">
+        <h2 class="section-heading proj-center">My Projects</h2>
+        <p class="section-sub proj-center">Explore my portfolio of personal and freelance projects showcasing my
+          skills in web and mobile development.</p>
+      </div>
 
-<div class="proj-card reveal" style="position: relative;">
-  <a href="https://e-commerce-theta-ten-63.vercel.app/" target="_blank"
-     onclick="event.stopPropagation();"
-     style="position:absolute; top:16px; right:16px;
-            padding:8px 16px; background-color:#4f46e5; color:#fff;
-            text-decoration:none; font-weight:600; font-size:14px;
-            border-radius:8px; transition:background-color 0.2s ease;"
-     onmouseover="this.style.backgroundColor='#4338ca'"
-     onmouseout="this.style.backgroundColor='#4f46e5'">
-    Live Demo
-  </a>
+      <div class="proj-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="angular">Angular</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="graduation">Graduation</button>
+      </div>
 
-  <h3>E-Commerce Website<span class="proj-emoji">🛒</span></h3>
-  <p>A responsive e-commerce web application with product listing, product details, and a shopping cart, built
-    with a component-based architecture for maintainability.</p>
-  <div class="proj-tags">
-    <span class="tag">HTML</span><span class="tag">SCSS</span><span class="tag">TypeScript</span><span
-      class="tag">Angular</span>
-  </div>
-</div>
-<div class="proj-card reveal" style="position: relative;">
-  <a href="https://ahmedhusseinhamdy.github.io/crud/" target="_blank"
-     onclick="event.stopPropagation();"
-     style="position:absolute; top:16px; right:16px;
-            padding:8px 16px; background-color:#4f46e5; color:#fff;
-            text-decoration:none; font-weight:600; font-size:14px;
-            border-radius:8px; transition:background-color 0.2s ease;"
-     onmouseover="this.style.backgroundColor='#4338ca'"
-     onmouseout="this.style.backgroundColor='#4f46e5'">
-    Live Demo
-  </a>
-
-  
-  <h3>CRUD Web Application <span class="proj-emoji">📁</span></h3>
-  <p>A web application implementing full Create, Read, Update and Delete operations for data management, with JavaScript-driven input validation for a smoother user experience.</p>
-  <div class="proj-tags">
-    <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
-  </div>
-</div>
-        <div class="proj-card reveal">
-          <h3>Roadside Assistance Platform <span class="proj-emoji">🚗</span></h3>
-          <p>Graduation project: a platform enabling drivers to request towing services and locate nearby maintenance
-            centers. Built the responsive front-end and integrated it with the back-end system.</p>
-          <div class="proj-tags">
-            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span
-              class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">PHP</span><span
-              class="tag">MySQL</span><span class="tag">UI/UX Design</span>
+      <div class="proj-grid">
+        <article class="proj-card reveal" data-cat="angular">
+          <div class="proj-thumb">
+            <span class="thumb-emoji">🛒</span>
+            <img src="images/E-commerce.png" alt="E-Commerce Website" onerror="this.remove()">
           </div>
-        </div>
+          <div class="proj-body">
+            <h3>E-Commerce Website</h3>
+            <p>A responsive e-commerce web application with product listing, product details, and a shopping cart,
+              built with a component-based architecture.</p>
+            <div class="proj-tags">
+              <span class="tag">HTML</span><span class="tag">SCSS</span><span class="tag">TypeScript</span><span
+                class="tag">Angular</span>
+            </div>
+            <div class="proj-links">
+              <a class="link-code" href="https://github.com/ahmedhusseinhamdy/E-commerce" target="_blank" rel="noopener">View Code</a>
+              <a class="link-demo" href="https://e-commerce-theta-ten-63.vercel.app/" target="_blank"
+                rel="noopener noreferrer">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal" data-cat="javascript">
+          <div class="proj-thumb">
+            <span class="thumb-emoji">📁</span>
+            <img src="images/crud.png" alt="CRUD Web Application" onerror="this.remove()">
+          </div>
+          <div class="proj-body">
+            <h3>CRUD Web Application</h3>
+            <p>Full Create, Read, Update and Delete operations for data management, with JavaScript-driven input
+              validation.</p>
+            <div class="proj-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a class="link-code" href="https://github.com/ahmedhusseinhamdy/crud" target="_blank" rel="noopener">View Code</a>
+              <a class="link-demo" href="https://ahmedhusseinhamdy.github.io/crud/" target="_blank"
+                rel="noopener noreferrer">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal" data-cat="graduation javascript">
+          <div class="proj-thumb">
+            <span class="thumb-emoji">🚗</span>
+          </div>
+          <div class="proj-body">
+            <h3>Roadside Assistance Platform</h3>
+            <p>Graduation project: drivers can request towing services and locate nearby maintenance centers. Built
+              the responsive front-end and integrated it with the back-end.</p>
+            <div class="proj-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span
+                class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">PHP</span><span
+                class="tag">MySQL</span>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- EDUCATION & LANGUAGES -->
-    <section id="education">
-      <p class="eyebrow-label">Learning path</p>
-      <h2 class="section-heading reveal">Education </h2>
-
-      <div class="edu-grid">
-        <div class="edu-card reveal-left">
-          <h3>Bachelor of Management Information Systems</h3>
-          <div class="edu-inst">El Shorouk Academy</div>
-          <div class="edu-meta">Sep 2019 — Jun 2023 · Cairo, Egypt</div>
-          <p>Focused on software development, databases, systems analysis, software engineering, networking, and
-            business management.</p>
-        </div>
-        <div class="edu-card reveal-right">
-          <h3>Front-End Development Diploma</h3>
-<div class="edu-inst">
-  <a href="https://www.linkedin.com/company/route-academy/" target="_blank" style="color: inherit; text-decoration: none;">Route Academy (Online)</a>
-</div>          <div class="edu-meta">Dec 2024 — Jun 2025 · Cairo, Egypt</div>
-          <p>Comprehensive program covering HTML, CSS, JavaScript and Angular, with hands-on experience building
-            responsive web applications.</p>
-        </div>
-      </div>
-<br>
-<h2 class="section-heading reveal"> languages</h2>
-      <div class="lang-row">
-        <div class="lang-badge reveal">
-          <h4>Arabic</h4>
-          <span>Native</span>
-        </div>
-        <div class="lang-badge reveal">
-          <h4>English</h4>
-          <span>Conversational</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <p class="eyebrow-label">Get in touch</p>
-      <h2 class="section-heading reveal">Let's work together</h2>
-
-      <div class="contact-grid">
-        <div>
-          <div class="contact-card reveal-left">
-            <div class="contact-icon">✉️</div>
-            <div>
-              <h4>Email</h4><a href="mailto:ahmedhussienhamdy@gmail.com">ahmedhussienhamdy@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-card reveal-left">
-            <div class="contact-icon">📞</div>
-            <div>
-              <h4>Phone</h4>
-              <a href="tel:01012355187">01012355187</a>
-            </div>
-          </div>
-          <div class="contact-card reveal-left">
-            <div class="contact-icon">📍</div>
-            <div>
-              <h4>Location</h4>
-              <p>Zahraa, Nasr City, Cairo, Egypt</p>
-            </div>
-          </div>
-          <div class="contact-card reveal-left">
-            <div class="contact-icon">✅</div>
-            <div>
-              <h4>Availability</h4>
-              <p>Open to full-time opportunities in Technical Support, Quality Assurance (QA), and Software Testing.</p>
-            </div>
-          </div>
-          <div class="contact-card reveal-left">
-            <div class="contact-icon">✅</div>
-            <div>
-              <h4>Military Service</h4>
-              <p>Completed military service</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-    </section>
-
-    <!-- LET'S CONNECT -->
+    <!-- LET'S CONNECT / CONTACT -->
     <section id="connect">
       <div class="connect-grid">
         <div class="connect-info reveal-left">
@@ -284,11 +255,11 @@
           <p class="connect-text">Looking for new opportunities in Technical Support and Software Testing. Feel free to reach out to request my CV or discuss potential job opportunities.</p>
           <div class="connect-icons">
             <a href="https://github.com/ahmedhusseinhamdy" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg viewBox="0 0 16 16" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              <svg width="30" height="30" fill="currentColor" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://linkedin.com/in/ahmed-hussien-012b6a33b" target="_blank" rel="noopener"
               aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <svg width="30" height="30" fill="currentColor" aria-hidden="true"><use href="#i-linkedin"/></svg>
             </a>
           </div>
         </div>
