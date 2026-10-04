@@ -173,3 +173,21 @@ window.addEventListener('scroll', () => {
     ticking = true;
   }
 }, { passive: true });
+
+
+/* ================= HERO NAME: TYPE & ERASE LOOP ================= */
+const typedName = document.getElementById('typedName');
+if (typedName && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const fullName = typedName.textContent.trim();
+  let i = fullName.length, erasing = false;
+  typedName.parentElement.setAttribute('aria-label', fullName);
+
+  (function tick() {
+    typedName.textContent = fullName.slice(0, i) || '\u200B';
+    let delay = erasing ? 60 : 110;
+    if (!erasing && i === fullName.length) { erasing = true; delay = 1800; }   // full name: pause
+    else if (erasing && i === 0)           { erasing = false; delay = 500; }    // erased: start typing again
+    else i += erasing ? -1 : 1;
+    setTimeout(tick, delay);
+  })();
+}
