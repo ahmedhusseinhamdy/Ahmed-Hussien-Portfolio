@@ -175,7 +175,7 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 
-/* ================= HERO NAME: TYPE & ERASE LOOP ================= */
+/* ================= Home NAME: TYPE & ERASE LOOP ================= */
 const typedName = document.getElementById('typedName');
 if (typedName && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const fullName = typedName.textContent.trim();

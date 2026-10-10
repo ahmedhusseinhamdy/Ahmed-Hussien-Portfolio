@@ -34,7 +34,7 @@ msgstr "No hay terminales disponibles"
 
 #: child.c:192
 msgid "Error: Could not open log file"
-msgstr "Error: No se puede abrir fichero de log"
+msgstr "Error: No se puede abrir ficHome de log"
 
 #: child.c:530
 msgid "Error: Could not fork child process"
@@ -249,7 +249,7 @@ msgstr "No se pudo cargar el tema web"
 
 #: config.c:3528 config.c:3629
 msgid "Cannot write theme file"
-msgstr "No se ha podido escribir en el fichero del tema"
+msgstr "No se ha podido escribir en el ficHome del tema"
 
 #: config.c:3533 config.c:3634 config.c:3639
 msgid "Cannot store theme file"
@@ -1162,7 +1162,7 @@ msgstr "B&uscar"
 #. __ Context menu:
 #: wininput.c:534
 msgid "&Log to File"
-msgstr "&Log a fichero"
+msgstr "&Log a ficHome"
 
 #. __ Context menu:
 #: wininput.c:540
@@ -1356,7 +1356,7 @@ msgstr ""
 "comando de login.\n"
 "\n"
 "Opciones:\n"
-"  -c, --config FICHERO  Carga el fichero de configuración (ver: -C, -o "
+"  -c, --config FICHome  Carga el ficHome de configuración (ver: -C, -o "
 "ThemeFile)\n"
 "  -e, --exec ...        Trata el resto de argumentos como el comando a "
 "ejecutar\n"
@@ -1374,12 +1374,12 @@ msgstr ""
 "comando ejecutado) (ver: -T)\n"
 "  -w, --window normal|min|max|full|hide  Establece el estado inicial de la "
 "ventana\n"
-"  -i, --icon FILE[,IX]  Carga el icono de la ventana desde el fichero, se "
+"  -i, --icon FILE[,IX]  Carga el icono de la ventana desde el ficHome, se "
 "puede usar índice\n"
-"  -l, --log FILE|-      Manda la salida de log a fichero o a salida "
+"  -l, --log FILE|-      Manda la salida de log a ficHome o a salida "
 "estándar\n"
 "      --nobidi|--nortl  Desactiva bidi (soporte izquierda-derecha)\n"
-"  -o, --option OPT=VAL  Establece/cambia opciones del fichero de "
+"  -o, --option OPT=VAL  Establece/cambia opciones del ficHome de "
 "configuración\n"
 "  -B, --Border frame|void  Usar borde fino, o desactivarlo\n"
 "  -R, --Report s|o      Imprime la posición de la ventana (formato corto/"

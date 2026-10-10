@@ -220,11 +220,11 @@ syn match   ldapconfPath          contained display
 
 " Defined in openssl-ciphers(1).
 " TODO: Should we include the stuff under CIPHER SUITE NAMES?
-syn cluster ldapconfTLSCipher     contains=ldapconfTLSCipherOp,
+syn cluster ldapconfTLSCipher     contains=ldapconfTLSCipHomep,
       \                                    ldapconfTLSCipherName,
       \                                    ldapconfTLSCipherSort
 
-syn match   ldapconfTLSCipherOp   contained display
+syn match   ldapconfTLSCipHomep   contained display
       \                           '[+!-]'
       \                           nextgroup=ldapconfTLSCipherName
 
@@ -324,7 +324,7 @@ hi def link ldapconfSASLSecFactor ldapconfNumber
 hi def link ldapconfSASLSecPSep   ldapconfSeparator
 hi def link ldapconfFilename      ldapconfString
 hi def link ldapconfPath          ldapconfFilename
-hi def link ldapconfTLSCipherOp   ldapconfOperator
+hi def link ldapconfTLSCipHomep   ldapconfOperator
 hi def link ldapconfTLSCipherName ldapconfDefine
 hi def link ldapconfSpecial       Special
 hi def link ldapconfTLSCipherSort ldapconfSpecial

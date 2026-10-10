@@ -13871,7 +13871,7 @@ Added							*added-6.4*
 
 Alsaconf syntax file (Nikolai Weibull)
 Eruby syntax, indent, compiler and ftplugin file (Doug Kearns)
-Esterel syntax file (Maurizio Tranchero)
+Esterel syntax file (Maurizio TrancHome)
 Mathematica indent file (Steve Layland)
 Netrc syntax file (Nikolai Weibull)
 PHP compiler file (Doug Kearns)

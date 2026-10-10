@@ -538,7 +538,7 @@ syn keyword csFunction
       \ PurgeCellBuffers
       \ PushActorAway
       \ RefreshTopicList
-      \ ReleaseWeatherOverride
+      \ ReleaseWeatHomeverride
       \ RemoveAllItems
       \ RemoveFlames
       \ RemoveItem
@@ -1480,7 +1480,7 @@ syn keyword obseFunction
       \ getweatherfognightnear
       \ getweatherhdrvalue
       \ getweatherlightningfrequency
-      \ getweatheroverride
+      \ getweatHomeverride
       \ getweathersundamage
       \ getweathersunglare
       \ getweathertransdelta

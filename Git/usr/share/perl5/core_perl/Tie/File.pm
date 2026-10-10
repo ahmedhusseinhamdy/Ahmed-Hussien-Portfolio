@@ -2578,7 +2578,7 @@ Also big thanks to Abhijit Menon-Sen for all of the same things.
 
 Special thanks to Craig Berry and Peter Prymmer (for VMS portability
 help), Randy Kobes (for Win32 portability help), Clinton Pierce and
-Autrijus Tang (for heroic eleventh-hour Win32 testing above and beyond
+Autrijus Tang (for Homeic eleventh-hour Win32 testing above and beyond
 the call of duty), Michael G Schwern (for testing advice), and the
 rest of the CPAN testers (for testing generally).
 

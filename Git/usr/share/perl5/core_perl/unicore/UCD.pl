@@ -3484,9 +3484,9 @@ $Unicode::UCD::HANGUL_COUNT = 11172;
 'blk=caucasianalbanian' => '#/416',
 'blk=chakma' => '#/157',
 'blk=cham' => '#/121',
-'blk=cherokee' => '#/236',
-'blk=cherokeesup' => '#/321',
-'blk=cherokeesupplement' => '#/321',
+'blk=cHomekee' => '#/236',
+'blk=cHomekeesup' => '#/321',
+'blk=cHomekeesupplement' => '#/321',
 'blk=chesssymbols' => '#/349',
 'blk=chorasmian' => '#/301',
 'blk=cjk' => '#/112',
@@ -4051,9 +4051,9 @@ $Unicode::UCD::HANGUL_COUNT = 11172;
 'changeswhentitlecased' => 'CWT/Y',
 'changeswhenuppercased' => 'CWU/Y',
 'cher' => 'Scx/Cher',
-'cherokee' => 'Scx/Cher',
-'cherokeesup' => '#/321',
-'cherokeesupplement' => '#/321',
+'cHomekee' => 'Scx/Cher',
+'cHomekeesup' => '#/321',
+'cHomekeesupplement' => '#/321',
 'chesssymbols' => '#/349',
 'chorasmian' => '#/701',
 'chrs' => '#/701',
@@ -4831,9 +4831,9 @@ $Unicode::UCD::HANGUL_COUNT = 11172;
 'incb=none' => 'InCB/None',
 'inchakma' => '#/157',
 'incham' => '#/121',
-'incherokee' => '#/236',
-'incherokeesup' => '#/321',
-'incherokeesupplement' => '#/321',
+'incHomekee' => '#/236',
+'incHomekeesup' => '#/321',
+'incHomekeesupplement' => '#/321',
 'inchesssymbols' => '#/349',
 'inchorasmian' => '#/301',
 'incjk' => '#/112',
@@ -5423,9 +5423,9 @@ $Unicode::UCD::HANGUL_COUNT = 11172;
 'ischangeswhentitlecased' => 'CWT/Y',
 'ischangeswhenuppercased' => 'CWU/Y',
 'ischer' => 'Scx/Cher',
-'ischerokee' => 'Scx/Cher',
-'ischerokeesup' => '#/321',
-'ischerokeesupplement' => '#/321',
+'iscHomekee' => 'Scx/Cher',
+'iscHomekeesup' => '#/321',
+'iscHomekeesupplement' => '#/321',
 'ischesssymbols' => '#/349',
 'ischorasmian' => '#/701',
 'ischrs' => '#/701',
@@ -6945,7 +6945,7 @@ $Unicode::UCD::HANGUL_COUNT = 11172;
 'sc=chakma' => '#/639',
 'sc=cham' => 'Scx/Cham',
 'sc=cher' => '#/641',
-'sc=cherokee' => '#/641',
+'sc=cHomekee' => '#/641',
 'sc=chorasmian' => '#/701',
 'sc=chrs' => '#/701',
 'sc=common' => 'Sc/Zyyy',
@@ -7281,7 +7281,7 @@ $Unicode::UCD::HANGUL_COUNT = 11172;
 'scx=chakma' => 'Scx/Cakm',
 'scx=cham' => 'Scx/Cham',
 'scx=cher' => 'Scx/Cher',
-'scx=cherokee' => 'Scx/Cher',
+'scx=cHomekee' => 'Scx/Cher',
 'scx=chorasmian' => '#/701',
 'scx=chrs' => '#/701',
 'scx=common' => 'Scx/Zyyy',
@@ -8366,9 +8366,9 @@ $Unicode::UCD::e_precision = 3;
 'blk=caucasianalbanian' => 'caucasianalbanian',
 'blk=chakma' => 'chakma',
 'blk=cham' => 'cham',
-'blk=cherokee' => 'cherokee',
-'blk=cherokeesup' => 'cherokeesup',
-'blk=cherokeesupplement' => 'cherokeesup',
+'blk=cHomekee' => 'cHomekee',
+'blk=cHomekeesup' => 'cHomekeesup',
+'blk=cHomekeesupplement' => 'cHomekeesup',
 'blk=chesssymbols' => 'chesssymbols',
 'blk=chorasmian' => 'chorasmian',
 'blk=cjk' => 'cjk',
@@ -10057,7 +10057,7 @@ $Unicode::UCD::e_precision = 3;
 'sc=chakma' => 'cakm',
 'sc=cham' => 'cham',
 'sc=cher' => 'cher',
-'sc=cherokee' => 'cher',
+'sc=cHomekee' => 'cher',
 'sc=chorasmian' => 'chrs',
 'sc=chrs' => 'chrs',
 'sc=common' => 'zyyy',
@@ -10393,7 +10393,7 @@ $Unicode::UCD::e_precision = 3;
 'scx=chakma' => 'cakm',
 'scx=cham' => 'cham',
 'scx=cher' => 'cher',
-'scx=cherokee' => 'cher',
+'scx=cHomekee' => 'cher',
 'scx=chorasmian' => 'chrs',
 'scx=chrs' => 'chrs',
 'scx=common' => 'zyyy',
@@ -12207,14 +12207,14 @@ $Unicode::UCD::e_precision = 3;
 [
 'Cham',
 ],
-'cherokee' => 
+'cHomekee' => 
 [
-'Cherokee',
+'CHomekee',
 ],
-'cherokeesup' => 
+'cHomekeesup' => 
 [
-'Cherokee_Sup',
-'Cherokee_Supplement',
+'CHomekee_Sup',
+'CHomekee_Supplement',
 ],
 'chesssymbols' => 
 [
@@ -17161,7 +17161,7 @@ $Unicode::UCD::e_precision = 3;
 'cher' => 
 [
 'Cher',
-'Cherokee',
+'CHomekee',
 ],
 'chrs' => 
 [
@@ -18018,7 +18018,7 @@ $Unicode::UCD::e_precision = 3;
 'cher' => 
 [
 'Cher',
-'Cherokee',
+'CHomekee',
 ],
 'chrs' => 
 [

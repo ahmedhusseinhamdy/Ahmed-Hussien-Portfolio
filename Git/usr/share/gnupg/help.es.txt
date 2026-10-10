@@ -207,15 +207,15 @@ Repita la última frase contraseña para asegurarse de lo que tecleó.
 .
 
 .gpg.detached_signature.filename
-Introduzca el nombre del fichero al que corresponde la firma
+Introduzca el nombre del ficHome al que corresponde la firma
 .
 
 .gpg.openfile.overwrite.okay
-Responda "sí" para sobreescribir el fichero
+Responda "sí" para sobreescribir el ficHome
 .
 
 .gpg.openfile.askoutname
-Introduzca un nuevo nombre de fichero. Si pulsa INTRO se usará el fichero
+Introduzca un nuevo nombre de ficHome. Si pulsa INTRO se usará el ficHome
 por omisión (mostrado entre corchetes).
 .
 

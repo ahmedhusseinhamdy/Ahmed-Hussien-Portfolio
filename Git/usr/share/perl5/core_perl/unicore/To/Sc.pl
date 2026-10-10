@@ -268,8 +268,8 @@ FD9	FDA	Tibetan
 1318	135A	Ethiopic
 135D	137C	Ethiopic
 1380	1399	Ethiopic
-13A0	13F5	Cherokee
-13F8	13FD	Cherokee
+13A0	13F5	CHomekee
+13F8	13FD	CHomekee
 1400	167F	Canadian_Aboriginal
 1680	169C	Ogham
 16A0	16EA	Runic
@@ -508,7 +508,7 @@ AB5C	AB64	Latin
 AB65		Greek
 AB66	AB69	Latin
 AB6A	AB6B	Common
-AB70	ABBF	Cherokee
+AB70	ABBF	CHomekee
 ABC0	ABED	Meetei_Mayek
 ABF0	ABF9	Meetei_Mayek
 AC00	D7A3	Hangul

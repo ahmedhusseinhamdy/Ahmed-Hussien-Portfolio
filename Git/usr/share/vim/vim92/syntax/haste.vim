@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	HASTE - a language for VLSI IC programming
-" Maintainer:	M. Tranchero - maurizio.tranchero?gmail.com
+" Maintainer:	M. TrancHome - maurizio.trancHome?gmail.com
 " Credits:	some parts have been taken from vhdl, verilog, and C syntax
 "		files
 " Version:	0.9

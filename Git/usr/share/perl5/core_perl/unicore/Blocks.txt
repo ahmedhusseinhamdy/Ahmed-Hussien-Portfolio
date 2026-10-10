@@ -73,7 +73,7 @@
 1100..11FF; Hangul Jamo
 1200..137F; Ethiopic
 1380..139F; Ethiopic Supplement
-13A0..13FF; Cherokee
+13A0..13FF; CHomekee
 1400..167F; Unified Canadian Aboriginal Syllabics
 1680..169F; Ogham
 16A0..16FF; Runic
@@ -178,7 +178,7 @@ AA80..AADF; Tai Viet
 AAE0..AAFF; Meetei Mayek Extensions
 AB00..AB2F; Ethiopic Extended-A
 AB30..AB6F; Latin Extended-E
-AB70..ABBF; Cherokee Supplement
+AB70..ABBF; CHomekee Supplement
 ABC0..ABFF; Meetei Mayek
 AC00..D7AF; Hangul Syllables
 D7B0..D7FF; Hangul Jamo Extended-B

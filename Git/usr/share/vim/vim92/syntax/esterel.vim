@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:			ESTEREL
-" Maintainer:		Maurizio Tranchero <maurizio.tranchero@polito.it> - <maurizio.tranchero@gmail.com>
+" Maintainer:		Maurizio TrancHome <maurizio.trancHome@polito.it> - <maurizio.trancHome@gmail.com>
 " Credits:			Luca Necchi	<luca.necchi@polito.it>, Nikos Andrikos <nick.andrik@gmail.com>
 " First Release:	Tue May 17 23:49:39 CEST 2005
 " Last Change:		Tue May  6 13:29:56 CEST 2008

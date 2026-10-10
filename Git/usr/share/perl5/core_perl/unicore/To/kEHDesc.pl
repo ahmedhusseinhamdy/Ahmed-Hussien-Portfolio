@@ -337,8 +337,8 @@ return <<'END';
 13160		A black ibis (Plegadis falcinellus).
 13161		A saddle-billed stork (Ephippiorhynchus senegalensis), with lappet.
 13162		Three saddle-billed stork (Ephippiorhynchus senegalensis), overlapping each other, the first bird having a lappet.
-13163		A gray heron (Ardea cinerea).
-13164		A gray heron (Ardea cinerea), legs drawn towards the body, seated on a pole, held upright through ropes (R91).
+13163		A gray Homen (Ardea cinerea).
+13164		A gray Homen (Ardea cinerea), legs drawn towards the body, seated on a pole, held upright through ropes (R91).
 13165		A cattle egret (Bubulcus ibis).
 13166		An ostrich (Struthio camelus), with both wings upwards.
 13167		A great cormorant (Phalacrocorax carbo).
@@ -363,7 +363,7 @@ return <<'END';
 1317D		A bowl for incense with smoke rising from the bowl (R7), written in front of the legs of a human headed bird (G53A).
 1317E		A trussed and plucked goose or duck, with the head backwards below its body.
 1317F		The head of a pintail duck (Anas acuta).
-13180		The head of a gray heron (Ardea cinerea).
+13180		The head of a gray Homen (Ardea cinerea).
 13181		The head of a spoonbill (Platalea leucorodia).
 13182		The head of a griffon vulture (Gyps fulvus), with a backwards curved neck.
 13183		The fully extended wing of a bird.
@@ -2609,7 +2609,7 @@ return <<'END';
 13BC2		A lions paw and foreleg, horizontally.
 13BC3		A lions paw.
 13BC4		The tigh of a bovid (ox), on top of a standard used for the carrying of religious symbols (R12).
-13BC5		A gray heron (Ardea cinerea) (G31), on top of the skin of a goat (F26).
+13BC5		A gray Homen (Ardea cinerea) (G31), on top of the skin of a goat (F26).
 13BC6		A human headed bird, with a flagellum (S45) on its shoulder (G53C), on top of the skin of a goat (F26).
 13BC7		Three triangles of skin with a tail.
 13BC8		The skin of a cow, with the top of the skin a lot wider than the bottom, with the tail curved backwards.
@@ -2721,21 +2721,21 @@ return <<'END';
 13C47		A cattle egret (Bubulcus ibis), with a bent neck, with the head facing towards the body.
 13C48		A cattle egret (Bubulcus ibis), with a bent neck, with the head facing towards the body, with a line over its neck (mutilation).
 13C49		A cattle egret (Bubulcus ibis), with a bent neck, with the head facing towards the body, and legs drawn towards the body.
-13C4A		A gray heron (Ardea cinerea) with a lappet.
-13C4B	13C4C	Three gray herons (Ardea cinerea), overlapping each other.
+13C4A		A gray Homen (Ardea cinerea) with a lappet.
+13C4B	13C4C	Three gray Homens (Ardea cinerea), overlapping each other.
 13C4D		A crested ibis (Ibis comata), with a crest of two long feathers on the head.
-13C4E		A gray heron (Ardea cinerea) (G31), on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).
-13C4F		A gray heron (Ardea cinerea) (G31), with a flagellum (S45) on its back.
-13C50		A gray heron (Ardea cinerea) (G31), with a flagellum (S45) on its back, on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).
-13C51		A gray heron (Ardea cinerea), legs drawn towards the body.
-13C52		A gray heron (Ardea cinerea), legs drawn towards the body, with a flagellum (S45) on its back, on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).
-13C54		A gray heron (Ardea cinerea), legs drawn towards the body (G215), with the claws on top of the hill country over the edge of the cultivated areas (N25).
-13C55		A gray heron (Ardea cinerea), legs drawn towards the body (G215), with the claws on top of a sand covered mountain over the edge of the cultivated areas (N26).
-13C56		A gray heron (Ardea cinerea), legs drawn towards the body (G215), with a flagellum (S45) on its back, with the claws on top of a sand covered mountain over the edge of the cultivated areas (N26).
-13C57		A gray heron (Ardea cinerea), legs drawn towards the body (G215), on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).
-13C58		A gray heron (Ardea cinerea) with a single straight feather on its head and a lappet.
-13C59		A gray heron (Ardea cinerea) with a single feather on its head and a lappet.
-13C5A		A gray heron (Ardea cinerea) with two feather on its head.
+13C4E		A gray Homen (Ardea cinerea) (G31), on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).
+13C4F		A gray Homen (Ardea cinerea) (G31), with a flagellum (S45) on its back.
+13C50		A gray Homen (Ardea cinerea) (G31), with a flagellum (S45) on its back, on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).
+13C51		A gray Homen (Ardea cinerea), legs drawn towards the body.
+13C52		A gray Homen (Ardea cinerea), legs drawn towards the body, with a flagellum (S45) on its back, on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).
+13C54		A gray Homen (Ardea cinerea), legs drawn towards the body (G215), with the claws on top of the hill country over the edge of the cultivated areas (N25).
+13C55		A gray Homen (Ardea cinerea), legs drawn towards the body (G215), with the claws on top of a sand covered mountain over the edge of the cultivated areas (N26).
+13C56		A gray Homen (Ardea cinerea), legs drawn towards the body (G215), with a flagellum (S45) on its back, with the claws on top of a sand covered mountain over the edge of the cultivated areas (N26).
+13C57		A gray Homen (Ardea cinerea), legs drawn towards the body (G215), on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).
+13C58		A gray Homen (Ardea cinerea) with a single straight feather on its head and a lappet.
+13C59		A gray Homen (Ardea cinerea) with a single feather on its head and a lappet.
+13C5A		A gray Homen (Ardea cinerea) with two feather on its head.
 13C5B		A crested ibis (Ibis comata), with a spiral, winding counter-clockwise away from its central point, ending at the right lower corner after about 1,5 turns (Z7) on its claws.
 13C5C		An African sacred ibis (Threskiornis aethiopicus) (G26A), with a flagellum (S45) on its shoulder, on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).
 13C5D		An African sacred ibis (Threskiornis aethiopicus) (G26A), on top of a standard used for the carrying of religious symbols with the vertical stick at the far side (R92A).

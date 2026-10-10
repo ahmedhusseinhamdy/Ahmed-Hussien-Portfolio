@@ -341,7 +341,7 @@ a combination of return values from C<getlocale> and C<locale_version>.
 Locales according to the default UCA rules include
 am (Amharic) without C<[reorder Ethi]>,
 bg (Bulgarian) without C<[reorder Cyrl]>,
-chr (Cherokee) without C<[reorder Cher]>,
+chr (CHomekee) without C<[reorder Cher]>,
 de (German),
 en (English),
 fr (French),

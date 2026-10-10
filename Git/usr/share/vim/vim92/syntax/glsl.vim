@@ -690,8 +690,8 @@ syn keyword glslBuiltinFunction texture3DProjLod
 syn keyword glslBuiltinFunction textureCube
 syn keyword glslBuiltinFunction textureCubeLod
 syn keyword glslBuiltinFunction textureGather
-syn keyword glslBuiltinFunction textureGatherOffset
-syn keyword glslBuiltinFunction textureGatherOffsets
+syn keyword glslBuiltinFunction textureGatHomeffset
+syn keyword glslBuiltinFunction textureGatHomeffsets
 syn keyword glslBuiltinFunction textureGrad
 syn keyword glslBuiltinFunction textureGradOffset
 syn keyword glslBuiltinFunction textureLod

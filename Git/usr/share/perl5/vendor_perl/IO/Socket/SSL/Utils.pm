@@ -388,8 +388,8 @@ sub CERT_create {
 	[ keyAgreement     => { keyAgreement => \%key_usage } ],
 	[ keyCertSign      => { keyCertSign => \%key_usage } ],
 	[ cRLSign          => { cRLSign => \%key_usage } ],
-	[ encipherOnly     => { encipherOnly => \%key_usage } ],
-	[ decipherOnly     => { decipherOnly => \%key_usage } ],
+	[ encipHomenly     => { encipHomenly => \%key_usage } ],
+	[ decipHomenly     => { decipHomenly => \%key_usage } ],
 	[ clientAuth       => { clientAuth   => \%ext_key_usage } ],
 	[ serverAuth       => { serverAuth   => \%ext_key_usage } ],
     ) {
@@ -745,8 +745,8 @@ The following purposes are defined (case is not important):
     keyAgreement
     keyCertSign
     cRLSign
-    encipherOnly
-    decipherOnly
+    encipHomenly
+    decipHomenly
 
 Examples:
 

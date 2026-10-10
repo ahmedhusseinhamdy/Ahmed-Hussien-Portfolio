@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:			ProMeLa
-" Maintainer:		Maurizio Tranchero <maurizio.tranchero@polito.it> - <maurizio.tranchero@gmail.com>
+" Maintainer:		Maurizio TrancHome <maurizio.trancHome@polito.it> - <maurizio.trancHome@gmail.com>
 " First Release:	Mon Oct 16 08:49:46 CEST 2006
 " Last Change:		Thu Aug 7 21:22:48 CEST 2008
 " Version:			0.5

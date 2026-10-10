@@ -13,7 +13,7 @@
      minutos, dependiendo de cuánto tiempo se dedique a la experimentación.
 
      Los comandos de estas lecciones modificarán el texto. Haga una copia de
-     este fichero para practicar (con «vimtutor» esto ya es una copia).
+     este ficHome para practicar (con «vimtutor» esto ya es una copia).
 
      Es importante recordar que este tutor está pensado para enseñar con
      la práctica. Esto significa que es necesario ejecutar los comandos
@@ -500,8 +500,8 @@ NOTA: Puede utilizar el retorno de carro para corregir errores mientras escribe.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	       Lección 1.4.1: UBICACIÓN DEL CURSOR Y ESTADO DEL ARCHIVO
 
- ** Pulse CTRL-G para mostrar su situación en el fichero y su estado.
-    Pulse G para moverse a una determinada línea del fichero. **
+ ** Pulse CTRL-G para mostrar su situación en el ficHome y su estado.
+    Pulse G para moverse a una determinada línea del ficHome. **
 
 NOTA: ¡¡Lea esta lección entera antes de ejecutar cualquiera de los pasos!!
 
@@ -602,7 +602,7 @@ NOTA: ¡Esto es muy útil en la detección de errores en un programa con
 			    RESUMEN DE LA LECCIÓN 1.4
 
 
-  1. CTRL-G  muestra la posición del cursor en el fichero y su estado.
+  1. CTRL-G  muestra la posición del cursor en el ficHome y su estado.
              G  mueve el cursor al final del archivo.
      número  G  mueve el cursor a ese número de línea.
             gg  mueve el cursor a la primera línea del archivo.
@@ -618,7 +618,7 @@ NOTA: ¡Esto es muy útil en la detección de errores en un programa con
   4. Para cambiar viejo en el primer nuevo en una línea escriba  :s/viejo/nuevo
    Para cambiar todos los viejo por nuevo en una línea escriba :s/viejo/nuevo/g
    Para cambiar frases entre dos números de líneas escriba  :#,#s/viejo/nuevo/g
-   Para cambiar viejo por nuevo en todo el fichero escriba  :%s/viejo/nuevo/g
+   Para cambiar viejo por nuevo en todo el ficHome escriba  :%s/viejo/nuevo/g
    Para pedir confirmación en cada caso añada  'c'	    :%s/viejo/nuevo/gc
 
 
@@ -646,21 +646,21 @@ NOTA: Todos los comando   :   deben finalizarse pulsando <INTRO>.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		     Lección 1.5.2: MÁS SOBRE GUARDAR FICHEROS
+		     Lección 1.5.2: MÁS SOBRE GUARDAR FICHomeS
 
 
-     ** Para guardar los cambios hechos en un fichero,
-	escriba  :w NOMBRE_DE_FICHERO **
+     ** Para guardar los cambios hechos en un ficHome,
+	escriba  :w NOMBRE_DE_FICHome **
 
   1. Escriba  :!dir  o	:!ls  para ver una lista de los archivos 
      de su directorio.
      Ya sabe que debe pulsar <INTRO> después de ello.
 
-  2. Elija un nombre de fichero que todavía no exista, como TEST.
+  2. Elija un nombre de ficHome que todavía no exista, como TEST.
 
-  3. Ahora escriba   :w TEST  (donde TEST es el nombre de fichero elegido).
+  3. Ahora escriba   :w TEST  (donde TEST es el nombre de ficHome elegido).
 
-  4. Esta acción guarda todo el fichero  (Vim Tutor)  bajo el nombre TEST.
+  4. Esta acción guarda todo el ficHome  (Vim Tutor)  bajo el nombre TEST.
      Para comprobarlo escriba	:!dir  o  :!ls  de nuevo y vea su directorio.
 
 NOTA: Si saliera de Vim y volviera a entrar de nuevo con  vim TEST  , el
@@ -698,10 +698,10 @@ NOTA: Al pulsar  v  inicia la selección visual. Puede mover el cursor para
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		Lección 1.5.4: RECUPERANDO Y MEZCLANDO FICHEROS
+		Lección 1.5.4: RECUPERANDO Y MEZCLANDO FICHomeS
 
 
- ** Para insertar el contenido de un fichero escriba :r NOMBRE_DEL_FICHERO **
+ ** Para insertar el contenido de un ficHome escriba :r NOMBRE_DEL_FICHome **
 
   1. Sitúe el cursor justo por encima de esta línea.
 
@@ -731,7 +731,7 @@ NOTA: También puede leer la salida de un comando externo. Por ejemplo,
       Algunos ejemplos útiles son:
       (Windows)     (Unix)
 	  :!dir          :!ls           - muestra el contenido de un directorio.
-	  :!del ARCHIVO  :!rm ARCHIVO   -  borra el fichero ARCHIVO.
+	  :!del ARCHIVO  :!rm ARCHIVO   -  borra el ficHome ARCHIVO.
 
   2.  :w ARCHIVO escribe el archivo actual de Vim en el disco con el 
       nombre de ARCHIVO.
@@ -983,7 +983,7 @@ NOTA:  El completado funciona con muchos comandos. Solo pulse CTRL-D o
 
   4. Escriba  :q  para cerrar la ventana de ayuda.
 
-  5. Cree un fichero vimrc de inicio para guardar sus ajustes preferidos.
+  5. Cree un ficHome vimrc de inicio para guardar sus ajustes preferidos.
 
   6. Cuando escriba un comando  :  pulse CTRL-D para ver posibles opciones.
      Pulse <TAB> para utilizar una de las opciones de completado.

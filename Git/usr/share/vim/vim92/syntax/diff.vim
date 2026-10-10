@@ -80,11 +80,11 @@ syn match diffCommon	"^Komunaj subdosierujoj: .* kaj .*"
 
 " es
 syn match diffOnly	"^Sólo en .*"
-syn match diffIdentical	"^Los ficheros .* y .* son idénticos$"
-syn match diffDiffer	"^Los ficheros .* y .* son distintos$"
-syn match diffBDiffer	"^Los ficheros binarios .* y .* son distintos$"
-syn match diffIsA	"^El fichero .* es un .* mientras que el .* es un .*"
-syn match diffNoEOL	"^\\ No hay ningún carácter de nueva línea al final del fichero"
+syn match diffIdentical	"^Los ficHomes .* y .* son idénticos$"
+syn match diffDiffer	"^Los ficHomes .* y .* son distintos$"
+syn match diffBDiffer	"^Los ficHomes binarios .* y .* son distintos$"
+syn match diffIsA	"^El ficHome .* es un .* mientras que el .* es un .*"
+syn match diffNoEOL	"^\\ No hay ningún carácter de nueva línea al final del ficHome"
 syn match diffCommon	"^Subdirectorios comunes: .* y .*"
 
 " fi

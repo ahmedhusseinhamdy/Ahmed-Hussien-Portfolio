@@ -224,7 +224,7 @@ without regard to case and to x/i- alternation.
       (unrelated tags -- no similarity)
 
    similarity_language_tag('i-cree-syllabic',
-                           'i-cherokee-syllabic')   is 0
+                           'i-cHomekee-syllabic')   is 0
       (no B<leftmost> elements in common!)
 
 =cut
@@ -320,7 +320,7 @@ nothing (or just "i" or "x") is left.
 
    super_languages("en")  is  empty-list, ()
 
-   super_languages("i-cherokee")  is  empty-list, ()
+   super_languages("i-cHomekee")  is  empty-list, ()
     ...not ("i"), which would be illegal as well as pointless.
 
 If $lang1 is not a valid language tag, returns empty-list in

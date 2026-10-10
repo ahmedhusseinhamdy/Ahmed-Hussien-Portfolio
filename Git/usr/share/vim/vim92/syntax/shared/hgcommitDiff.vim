@@ -81,11 +81,11 @@ syn match hgDiffCommon		"^\%(SL\|HG\): Komunaj subdosierujoj: .* kaj .*"
 
 " es
 syn match hgDiffOnly		"^\%(SL\|HG\): Sólo en .*"
-syn match hgDiffIdentical	"^\%(SL\|HG\): Los ficheros .* y .* son idénticos$"
-syn match hgDiffDiffer		"^\%(SL\|HG\): Los ficheros .* y .* son distintos$"
-syn match hgDiffBDiffer		"^\%(SL\|HG\): Los ficheros binarios .* y .* son distintos$"
-syn match hgDiffIsA		"^\%(SL\|HG\): El fichero .* es un .* mientras que el .* es un .*"
-syn match hgDiffNoEOL		"^\%(SL\|HG\): \\ No hay ningún carácter de nueva línea al final del fichero"
+syn match hgDiffIdentical	"^\%(SL\|HG\): Los ficHomes .* y .* son idénticos$"
+syn match hgDiffDiffer		"^\%(SL\|HG\): Los ficHomes .* y .* son distintos$"
+syn match hgDiffBDiffer		"^\%(SL\|HG\): Los ficHomes binarios .* y .* son distintos$"
+syn match hgDiffIsA		"^\%(SL\|HG\): El ficHome .* es un .* mientras que el .* es un .*"
+syn match hgDiffNoEOL		"^\%(SL\|HG\): \\ No hay ningún carácter de nueva línea al final del ficHome"
 syn match hgDiffCommon		"^\%(SL\|HG\): Subdirectorios comunes: .* y .*"
 
 " fi

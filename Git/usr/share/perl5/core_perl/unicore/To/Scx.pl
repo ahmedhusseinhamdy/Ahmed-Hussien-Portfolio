@@ -50,19 +50,19 @@ F8	2B8	Latin
 2E5	2E9	Common
 2EA	2EB	Bopomofo
 2EC	2FF	Common
-300		Cherokee Coptic Cyrillic Greek Latin Old_Permic Sunuwar Tai_Le
-301		Cherokee Cyrillic Greek Latin Osage Sunuwar Tai_Le Todhri
-302		Cherokee Cyrillic Latin Tifinagh
+300		CHomekee Coptic Cyrillic Greek Latin Old_Permic Sunuwar Tai_Le
+301		CHomekee Cyrillic Greek Latin Osage Sunuwar Tai_Le Todhri
+302		CHomekee Cyrillic Latin Tifinagh
 303		Glagolitic Latin Sunuwar Syriac Thai
-304		Caucasian_Albanian Cherokee Coptic Cyrillic Gothic Greek Latin Osage Syriac Tifinagh Todhri
+304		Caucasian_Albanian CHomekee Coptic Cyrillic Gothic Greek Latin Osage Syriac Tifinagh Todhri
 305		Coptic Elbasan Glagolitic Gothic Katakana Latin
 306		Cyrillic Greek Latin Old_Permic
 307		Coptic Duployan Hebrew Latin Old_Permic Syriac Tai_Le Tifinagh Todhri
 308		Armenian Cyrillic Duployan Gothic Greek Hebrew Latin Old_Permic Syriac Tai_Le
 309		Latin Tifinagh
 30A		Duployan Latin Syriac
-30B		Cherokee Cyrillic Latin Osage
-30C		Cherokee Latin Tai_Le
+30B		CHomekee Cyrillic Latin Osage
+30C		CHomekee Latin Tai_Le
 30D		Latin Sunuwar
 30E		Ethiopic Latin
 30F		Inherited
@@ -73,15 +73,15 @@ F8	2B8	Latin
 314	31F	Inherited
 320		Latin Syriac
 321	322	Inherited
-323		Cherokee Duployan Katakana Latin Syriac
-324		Cherokee Duployan Latin Syriac
+323		CHomekee Duployan Katakana Latin Syriac
+324		CHomekee Duployan Latin Syriac
 325		Latin Syriac
 326	32C	Inherited
 32D		Latin Sunuwar Syriac
 32E		Latin Syriac
 32F		Inherited
-330		Cherokee Latin Syriac
-331		Caucasian_Albanian Cherokee Gothic Latin Sunuwar Thai
+330		CHomekee Latin Syriac
+331		Caucasian_Albanian CHomekee Gothic Latin Sunuwar Thai
 332	341	Inherited
 342		Greek
 343	344	Inherited
@@ -343,8 +343,8 @@ FD9	FDA	Tibetan
 1318	135A	Ethiopic
 135D	137C	Ethiopic
 1380	1399	Ethiopic
-13A0	13F5	Cherokee
-13F8	13FD	Cherokee
+13A0	13F5	CHomekee
+13F8	13FD	CHomekee
 1400	167F	Canadian_Aboriginal
 1680	169C	Ogham
 16A0	16F8	Runic
@@ -656,7 +656,7 @@ AB5C	AB64	Latin
 AB65		Greek
 AB66	AB69	Latin
 AB6A	AB6B	Common
-AB70	ABBF	Cherokee
+AB70	ABBF	CHomekee
 ABC0	ABED	Meetei_Mayek
 ABF0	ABF9	Meetei_Mayek
 AC00	D7A3	Hangul

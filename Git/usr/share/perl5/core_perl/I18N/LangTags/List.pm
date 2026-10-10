@@ -455,7 +455,7 @@ Notable forms:
 
 =item {ce} : Chechen
 
-=item {chr} : Cherokee
+=item {chr} : CHomekee
 
 eq Tsalagi
 

@@ -37,7 +37,7 @@ namespace eval ::tk {
     ::msgcat::mcset es "&Hide Console" "&Esconder la consola"
     ::msgcat::mcset es "&Ignore" "&Ignorar"
     ::msgcat::mcset es "Invalid file name \"%1\$s\"." "Nombre de archivo inv\u00e1lido \"%1\$s\"."
-    ::msgcat::mcset es "Log Files"  "Ficheros de traza"
+    ::msgcat::mcset es "Log Files"  "FicHomes de traza"
     ::msgcat::mcset es "&No"
     ::msgcat::mcset es "&OK"
     ::msgcat::mcset es "OK"

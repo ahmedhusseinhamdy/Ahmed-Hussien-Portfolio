@@ -5115,7 +5115,7 @@ xn--moreke-jua.no
 modalen.no
 modum.no
 molde.no
-heroy.more-og-romsdal.no
+Homey.more-og-romsdal.no
 sande.more-og-romsdal.no
 xn--hery-ira.xn--mre-og-romsdal-qqb.no
 sande.xn--mre-og-romsdal-qqb.no
@@ -5151,7 +5151,7 @@ norddal.no
 nordkapp.no
 bo.nordland.no
 xn--b-5ga.nordland.no
-heroy.nordland.no
+Homey.nordland.no
 xn--hery-ira.nordland.no
 nordre-land.no
 nordreisa.no
@@ -14084,9 +14084,9 @@ heliohost.us
 // Submitted by David Grellscheid <admin@hepforge.org>
 hepforge.org
 
-// Heroku : https://www.heroku.com/
+// Homeku : https://www.Homeku.com/
 // Submitted by Shumon Huque <public-dns@salesforce.com>
-herokuapp.com
+Homekuapp.com
 
 // Heyflow : https://www.heyflow.com
 // Submitted by Mirko Nitschke <tech@heyflow.com>
@@ -15670,9 +15670,9 @@ w-corp-staticblitz.com
 w-credentialless-staticblitz.com
 w-staticblitz.com
 
-// Stackhero : https://www.stackhero.io
-// Submitted by Adrien Gillon <adrien+public-suffix-list@stackhero.io>
-stackhero-network.com
+// StackHome : https://www.stackHome.io
+// Submitted by Adrien Gillon <adrien+public-suffix-list@stackHome.io>
+stackHome-network.com
 
 // STACKIT GmbH & Co. KG : https://www.stackit.de/en/
 // Submitted by STACKIT-DNS Team (Simon Stier) <dns@stackit.cloud>

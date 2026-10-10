@@ -2,7 +2,7 @@
 " Language:	Matlab
 " Maintainer:	Alex Burka <vim@alexburka.com>
 " Credits:	Preben 'Peppe' Guldberg <peppe-vim@wielders.org>
-"		Maurizio Tranchero - maurizio(.)tranchero(@)gmail(.)com
+"		Maurizio TrancHome - maurizio(.)trancHome(@)gmail(.)com
 "		Original author: Mario Eusebio
 " Last Change:	June 10 2019
 " 		added highlight rule for double-quoted string literals

@@ -295,7 +295,7 @@ return <<'END';
 1315F		Logogram (to be red)
 13160	13161	Phonemogram
 13162		Logogram (souls)
-13163		Classifier heron
+13163		Classifier Homen
 13164		Logogram (to inundate)
 13165		Phonemogram
 13166		Classifier ostrich
@@ -2294,7 +2294,7 @@ return <<'END';
 13C56		Logogram (inundation)
 13C57		Logogram (god)
 13C58		Phonemogram
-13C59		Classifier heron
+13C59		Classifier Homen
 13C5A	13C5B	Phonemogram
 13C5C		Logogram (god)
 13C5D		Logogram (Thot)

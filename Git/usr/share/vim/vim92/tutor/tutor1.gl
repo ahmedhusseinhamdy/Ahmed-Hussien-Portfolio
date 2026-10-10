@@ -515,7 +515,7 @@ NOTA: Pode utiliza-lo retorno de carro para corrixir erros mentres escribe.
 
 
   ** Prema CTRL-G para mostra-la súa situación no ficheiro e mailo estado.
-     Prema G para moverse a unha determinada liña do fichero. **
+     Prema G para moverse a unha determinada liña do ficHome. **
 
 NOTA: Lea esta lección enteira antes de executar calquera dos pasos!!
 
@@ -638,7 +638,7 @@ NOTA: Isto é moi útil na detección de erros nun programa con parénteses,
                                                           :s/vello/novo/g
    Para cambiar texto entre dous números de liña escriba
                                                           :#,#s/vello/novo/g
-   Para cambiar vello por novo en todo o fichero escriba
+   Para cambiar vello por novo en todo o ficHome escriba
                                                           :%s/vello/novo/g
    Para pedir confirmación en cada caso engada  'c'
                                                           :%s/vello/novo/gc

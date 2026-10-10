@@ -30,10 +30,10 @@ syn match satherRepeat		 "break!"
 syn match satherRepeat		 "until!"
 syn keyword satherBoolValue	 true false
 syn keyword satherValue		 self here cluster
-syn keyword satherOperator	 new "== != & ^ | && ||
-syn keyword satherOperator	 and or not
-syn match satherOperator	 "[#!]"
-syn match satherOperator	 ":-"
+syn keyword satHomeperator	 new "== != & ^ | && ||
+syn keyword satHomeperator	 and or not
+syn match satHomeperator	 "[#!]"
+syn match satHomeperator	 ":-"
 syn keyword satherType		 void attr where
 syn match satherType	       "near *("he=e-1
 syn match satherType	       "far *("he=e-1
@@ -77,7 +77,7 @@ hi def link satherCharacter	satherValue
 hi def link satherSpecialCharacter satherValue
 hi def link satherNumber		satherValue
 hi def link satherStatement	Statement
-hi def link satherOperator		Statement
+hi def link satHomeperator		Statement
 hi def link satherComment		Comment
 hi def link satherType		Type
 hi def link satherValue		String
